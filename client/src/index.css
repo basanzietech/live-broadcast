@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(120deg, #f8fafc 0%, #e3f2fd 100%);
+}
+
+@keyframes livePulse {
+  0% { opacity: 1; }
+  100% { opacity: 0.6; transform: scale(1.08); }
+}
+
+@media (max-width: 600px) {
+  .App-main {
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+/* WhatsApp button */
+.whatsapp-float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9999;
+  background: linear-gradient(90deg,#25d366,#128c7e);
+  color: #fff;
+  border-radius: 50px;
+  padding: 12px 22px 12px 18px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px #128c7e33;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.whatsapp-float:hover {
+  box-shadow: 0 8px 32px #128c7e55;
+  transform: scale(1.05);
+}
