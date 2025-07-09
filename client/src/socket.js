@@ -1,5 +1,5 @@
 import { io } from 'socket.io-client';
-const socket = io('https://live-broadcast-backed.vercel.app');
+const socket = io('https://live-broadcast-sb5d.onrender.com');
 socket.on('connect', () => {
   console.log('Socket.io connected!', socket.id);
 });
